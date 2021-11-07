@@ -4,6 +4,7 @@
 const CACHE_NAME = 'lab-7-starter';
 
 const recipes = [
+  '/',
   'https://introweb.tech/assets/json/ghostCookies.json',
   'https://introweb.tech/assets/json/birthdayCake.json',
   'https://introweb.tech/assets/json/chocolateChip.json',
