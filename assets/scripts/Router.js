@@ -85,7 +85,7 @@ export class Router {
     const pageState = {'page': page, 'hash': hash}
 
     if(!statePopped && window.location.hash != hash) {
-      history.pushState(pageState, "blank", window.location.origin + hash)
+      history.pushState(pageState, "blank", window.location.pathname + hash)
     }
 
     this[page]()
