@@ -3,16 +3,6 @@
 
 const CACHE_NAME = 'lab-7-starter';
 
-const recipes = [
-  '/',
-  'https://introweb.tech/assets/json/ghostCookies.json',
-  'https://introweb.tech/assets/json/birthdayCake.json',
-  'https://introweb.tech/assets/json/chocolateChip.json',
-  'https://introweb.tech/assets/json/stuffing.json',
-  'https://introweb.tech/assets/json/turkey.json',
-  'https://introweb.tech/assets/json/pumpkinPie.json'
-];
-
 
 // Once the service worker has been installed, feed it some initial URLs to cache
 self.addEventListener('install', function (event) {
@@ -27,7 +17,7 @@ self.addEventListener('install', function (event) {
     caches.open(CACHE_NAME)
       .then(function(cache) {
         console.log('Opened cache');
-        return cache.addAll(recipes);
+        return cache.addAll(["/"]);
       })
   );
   
