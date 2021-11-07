@@ -3,6 +3,15 @@
 
 const CACHE_NAME = 'lab-7-starter';
 
+const recipes = [
+  'https://aalipoure34.github.io/Lab7_Starter/assets/components/RecipeCard.js',
+  'https://aalipoure34.github.io/Lab7_Starter/assets/components/RecipeExpand.js',
+  'https://aalipoure34.github.io/Lab7_Starter/assets/scripts/main.js',
+  'https://aalipoure34.github.io/Lab7_Starter/assets/scripts/Router.js',
+  'https://aalipoure34.github.io/Lab7_Starter/assets/styles/main.css'
+];
+
+
 
 // Once the service worker has been installed, feed it some initial URLs to cache
 self.addEventListener('install', function (event) {
@@ -17,7 +26,7 @@ self.addEventListener('install', function (event) {
     caches.open(CACHE_NAME)
       .then(function(cache) {
         console.log('Opened cache');
-        return cache.addAll(['/']);
+        return cache.addAll(recipes);
       })
   );
   
