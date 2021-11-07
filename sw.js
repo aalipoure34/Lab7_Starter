@@ -8,8 +8,15 @@ const recipes = [
   'https://aalipoure34.github.io/Lab7_Starter/assets/components/RecipeExpand.js',
   'https://aalipoure34.github.io/Lab7_Starter/assets/scripts/main.js',
   'https://aalipoure34.github.io/Lab7_Starter/assets/scripts/Router.js',
-  'https://aalipoure34.github.io/Lab7_Starter/assets/styles/main.css'
+  'https://aalipoure34.github.io/Lab7_Starter/assets/styles/main.css',
+  'https://introweb.tech/assets/json/ghostCookies.json',
+  'https://introweb.tech/assets/json/birthdayCake.json',
+  'https://introweb.tech/assets/json/chocolateChip.json',
+  'https://introweb.tech/assets/json/stuffing.json',
+  'https://introweb.tech/assets/json/turkey.json',
+  'https://introweb.tech/assets/json/pumpkinPie.json'
 ];
+
 
 
 
