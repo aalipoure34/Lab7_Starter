@@ -4,11 +4,6 @@
 const CACHE_NAME = 'lab-7-starter';
 
 const recipes = [
-  'https://aalipoure34.github.io/Lab7_Starter/assets/components/RecipeCard.js',
-  'https://aalipoure34.github.io/Lab7_Starter/assets/components/RecipeExpand.js',
-  'https://aalipoure34.github.io/Lab7_Starter/assets/scripts/main.js',
-  'https://aalipoure34.github.io/Lab7_Starter/assets/scripts/Router.js',
-  'https://aalipoure34.github.io/Lab7_Starter/assets/styles/main.css',
   'https://introweb.tech/assets/json/ghostCookies.json',
   'https://introweb.tech/assets/json/birthdayCake.json',
   'https://introweb.tech/assets/json/chocolateChip.json',
@@ -16,9 +11,6 @@ const recipes = [
   'https://introweb.tech/assets/json/turkey.json',
   'https://introweb.tech/assets/json/pumpkinPie.json'
 ];
-
-
-
 
 // Once the service worker has been installed, feed it some initial URLs to cache
 self.addEventListener('install', function (event) {
