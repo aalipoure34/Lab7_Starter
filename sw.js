@@ -3,14 +3,15 @@
 
 const CACHE_NAME = 'lab-7-starter';
 
-const recipes = [
-  'sw.js',
-  'index.html',
-  'assets/scripts/main.js',
-  'assets/scripts/Router.js',
-  'assets/components/RecipeCard.js',
-  'assets/styles/main.css'
+const urls = [
+  'https://introweb.tech/assets/json/ghostCookies.json',
+  'https://introweb.tech/assets/json/birthdayCake.json',
+  'https://introweb.tech/assets/json/chocolateChip.json',
+  'https://introweb.tech/assets/json/stuffing.json',
+  'https://introweb.tech/assets/json/turkey.json',
+  'https://introweb.tech/assets/json/pumpkinPie.json'
 ];
+
 
 // Once the service worker has been installed, feed it some initial URLs to cache
 self.addEventListener('install', function (event) {
@@ -25,7 +26,7 @@ self.addEventListener('install', function (event) {
     caches.open(CACHE_NAME)
       .then(function(cache) {
         console.log('Opened cache');
-        return cache.addAll(recipes);
+        return cache.addAll(urls);
       })
   );
   
@@ -45,22 +46,8 @@ self.addEventListener('activate', function (event) {
    */
 
   //Citation: This code is not mine! It's from the Google tutorial on Service Workers.
-
   
-
-  var cacheAllowlist = [CACHE_NAME];
-
-   event.waitUntil(
-     caches.keys().then(function(cacheNames) {
-       return Promise.all(
-         cacheNames.map(function(cacheName) {
-           if (cacheAllowlist.indexOf(cacheName) === -1) {
-             return caches.delete(cacheName);
-           }
-         })
-       );
-     })
-   );
+  event.waitUntil(clients.claim());
   
    
 });
