@@ -45,7 +45,7 @@ self.addEventListener('activate', function (event) {
    * Create a function as outlined above, it should be one line
    */
 
-  //Citation: This code is not mine! It's from the Google tutorial on Service Workers.
+  //Citation: This code is not mine! It's from the MDN.
   
   event.waitUntil(clients.claim());
   
