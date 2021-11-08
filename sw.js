@@ -4,12 +4,12 @@
 const CACHE_NAME = 'lab-7-starter';
 
 const recipes = [
-  'https://introweb.tech/assets/json/ghostCookies.json',
-  'https://introweb.tech/assets/json/birthdayCake.json',
-  'https://introweb.tech/assets/json/chocolateChip.json',
-  'https://introweb.tech/assets/json/stuffing.json',
-  'https://introweb.tech/assets/json/turkey.json',
-  'https://introweb.tech/assets/json/pumpkinPie.json'
+  'sw.js',
+  'index.html',
+  'assets/scripts/main.js',
+  'assets/scripts/Router.js',
+  'assets/components/RecipeCard.js',
+  'assets/styles/main.css'
 ];
 
 // Once the service worker has been installed, feed it some initial URLs to cache
